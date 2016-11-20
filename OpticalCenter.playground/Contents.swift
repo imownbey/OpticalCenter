@@ -18,7 +18,6 @@ func showPath(for points: [CGPoint]) -> UIBezierPath {
 
 let image = UIImage(named: "icon")!
 let opaque = image.opaquePoints()
-image
 showPath(for: opaque)
 
 let convex = ConvexHull.calculate(on: opaque)
